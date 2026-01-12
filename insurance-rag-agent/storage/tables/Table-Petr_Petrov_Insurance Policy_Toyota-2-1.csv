@@ -1,0 +1,15 @@
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,$800.00
+Bodily Injury,"$250,000","$500,000",N/A,$550.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$50.00
+Part C: Uninsured Motorist,,,,$120.00
+Bodily Injury,"$250,000","$500,000",N/A,$90.00
+Property Damage,N/A,"$100,000",$250,$30.00
+Part D: Physical Damage,,,,$700.00
+Collision,Actual Cash Value,Actual Cash Value,$500,$450.00
+Comprehensive,Actual Cash Value,Actual Cash Value,$250,$250.00
+Endorsements,,,,$30.00
+Roadside Assistance,Included,Included,N/A,$15.00
+Rental Reimbursement,$30/day,$900 max,N/A,$15.00
+Total Policy Premium,,,,"$1,700.00"

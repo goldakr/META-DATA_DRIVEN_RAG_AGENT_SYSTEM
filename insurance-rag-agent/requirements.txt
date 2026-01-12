@@ -1,0 +1,41 @@
+# Core dependencies
+openai>=1.0.0
+python-dotenv>=1.0.0
+
+# LlamaIndex core packages (latest stable versions for Python 3.13)
+llama-index>=0.12.0
+llama-index-core>=0.12.0
+llama-index-llms-openai>=0.3.0
+llama-index-embeddings-openai>=0.3.0
+llama-index-readers-file>=0.3.0
+
+# BM25 retriever for hybrid search
+llama-index-retrievers-bm25>=0.6.0
+
+# Optional vector store (ChromaDB)
+llama-index-vector-stores-chroma>=0.5.0
+chromadb>=0.5.0
+
+# PDF processing
+pdfplumber>=0.11.0
+camelot-py[cv]>=0.10.1
+ghostscript>=0.7
+
+# Data processing
+pandas>=2.0.0
+numpy>=1.24.0
+
+# CLI interface
+typer>=0.12.0
+rich>=13.0.0
+
+# Token counting
+tiktoken>=0.7.0
+
+# Evaluation (optional - for RAGAS)
+ragas>=0.1.0
+datasets>=2.18.0
+
+# Testing
+pytest>=7.0.0
+pytest-mock>=3.10.0

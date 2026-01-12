@@ -1,0 +1,91 @@
+(venv) PS C:\UserFiles\User\Desktop\FINAL_PROJECT\insurance-rag-agent> python run_table_qa_eval.py --storage storage
+🚀 Starting Table-QA Accuracy Evaluation
+============================================================
+📋 Loaded 11 test cases
+
+🔍 Testing: Final settlement payment amount from Petr Petrov payment report
+   Query: How much was Petr Petrov final settlement payment?
+   ✅ Answer: The final settlement payment for Petr Petrov was $212,500.
+
+🔍 Testing: Total policy premium from Alex Jones insurance policy
+   Query: What is Alex Jones total policy premium?
+   ✅ Answer: Alex Jones' total policy premium is $7,150.00.
+
+🔍 Testing: Date of final payment from Petr Petrov payment report
+   Query: When was the final payment made to Petr Petrov?
+   ✅ Answer: The final payment made to Petr Petrov was a Final Settlement Payment from the at-fault insurer, which occurred on July 10, 2025, and amounted to $212,500. This payment settled his claim for all bodily injury and non-economic damages, including medical expenses, lost wages, and pain and suffering. Additionally, on August 1, 2025, Petr received a reimbursement of $10,000 for home modifications. Prior to these payments, there were several other payments made, including a settlement payment of $150,000 on July 10, 2025, related to his claim. Overall, the negotiations resulted in a comprehensive settlement agreement that provided significant financial relief for Petr, covering 85% of his projected expenses and including provisions for long-term mobility assistance and extended therapy sessions.
+
+🔍 Testing: Per-person liability limit from Alex Jones insurance policy
+   Query: What is the per-person liability limit for Alex Jones?
+   ✅ Answer: Incident Components:
+  - Alex Jones: Main Driver
+  - Bodily Injury: $1,000,000
+Policy Sections:
+  - Part A: Liability: Bodily Injury Per-Person Limit
+Coverage Notes: The per-person liability limit for Bodily Injury is $1,000,000.
+
+🔍 Testing: Deductible amount from Petr Petrov Honda insurance policy
+   Query: What is the deductible amount for Petr Petrov Honda policy?
+   ✅ Answer: Incident Components: deductible amount
+Policy Sections:
+Coverage Notes: The deductible amount for the Honda policy is $750.00 for liability coverage and $650.00 for physical damage coverage.
+
+🔍 Testing: Description of largest payment from Petr Petrov payment report
+   Query: What was the description of the largest payment to Petr Petrov?
+   ✅ Answer: The largest payment to Petr Petrov was a final settlement payment of $212,500 made by the at-fault insurer, Amal Insurance Co., on July 10, 2025. This payment was the result of extensive negotiations following an initial offer that Petr's legal counsel deemed inadequate. The negotiations were driven by the severity of Petr's injuries, which included a permanent impairment from a fractured femur and ongoing effects from a traumatic brain injury, as well as significant emotional trauma and lost wages due to his inability to work as a software engineer. In addition to the final settlement, other payments related to Petr's car accident claim included a partial compensation of $50,000 received on June 15, 2025, a total loss payout of $30,000 for his 2023 Honda Civic on July 20, 2025, and reimbursements for medical payments and home modifications totaling $5,000 and $10,000, respectively. The comprehensive settlement agreement ultimately covered 85% of Petr's projected expenses and included provisions for substantial home modifications to address his long-term mobility challenges, such as the installation of ramps, widened doorways, and grab bars. The negotiations involved detailed discussions about medical reports, expert opinions on future care needs, and financial projections for lost income and rehabilitation costs, significantly improving upon the initial offer from the insurer.
+
+🔍 Testing: Sum of all payments from Petr Petrov payment report
+   Query: What is the total amount of all payments made to Petr Petrov?
+   ✅ Answer: The total amount of all payments made to Petr Petrov is $307,500.
+
+🔍 Testing: Coverage type from Alex Jones insurance policy
+   Query: What type of coverage does Alex Jones have for bodily injury?
+   ✅ Answer: Incident Components: bodily injury, auto accident, damages, medical expenses, lost wages, pain and suffering
+Policy Sections:
+  - Part A: Liability Coverage
+  - A. Bodily Injury Liability
+Coverage Notes: Alex Jones has liability coverage for bodily injury resulting from auto accidents, which includes payment for damages, medical expenses, lost wages, and pain and suffering.
+
+🔍 Testing: Per-accident liability limit from Alex Jones insurance policy
+   Query: What is the per-Accident liability limit for Alex Jones?
+   ✅ Answer: Incident Components: unidentified third party collision, damages to Alex Jones's vehicle, medical expenses for Alex Jones, injuries to Jane Doe
+Policy Sections:
+  - Part A: Liability - Bodily Injury Per-Accident Limit: $2,000,000
+  - Part A: Liability - Property Damage Per-Accident Limit: $500,000
+  - Part C: Uninsured Motorist - Bodily Injury Per-Accident Limit: $2,000,000
+  - Part C: Uninsured Motorist - Property Damage Per-Accident Limit: $500,000
+Coverage Notes: The per-Accident liability limit for bodily injury is $2,000,000 and for property damage is $500,000.
+
+🔍 Testing: Total demanded settlement amount for Alex Jones case
+   Query: What is the total demanded settlement amount in case of Alex Jones?
+   ✅ Answer: The total demanded settlement amount in the case of Alex Jones is $250,000.
+
+🔍 Testing: Approved partial compensation amount for Maria Petrov
+   Query: What is the approved partial compensation for Maria Petrov?
+   ✅ Answer: Maria Petrov has been approved for a partial compensation of $50,000 as of June 15, 2025, following a vehicle collision that occurred on May 5, 2025. In this incident, she sustained minor injuries, including whiplash (neck strain), minor bruising on her left arm and shoulder, and a headache. Although she received treatment from paramedics at the scene, she declined transport to the hospital but was advised to seek further medical attention if her symptoms persisted. Maria reported minor medical expenses related to follow-up visits and potential physical therapy, as well as pain and suffering due to emotional distress and physical discomfort. The assessment concluded that the third party involved, John Smith, was solely responsible for the collision, having run a red light and struck Maria's vehicle, a 2023 Toyota Camry, which suffered significant damage primarily to the passenger side. Recommendations for claims adjustment include contacting John Smith's insurance provider, authorizing repairs for Maria's vehicle, and addressing her medical claims through her Personal Injury Protection (PIP) and the third-party's liability insurer.
+
+============================================================
+📊 TABLE-QA EVALUATION SUMMARY
+============================================================
+Total Tests: 11
+Successful Tests: 11
+Success Rate: 100.00%
+Tool Accuracy: 100.00%
+Avg Anchors Count: 0.0
+Avg Response Length: 489 chars
+
+🎯 SPECIFIC ACCURACY CHECKS:
+  correct_amount: 1
+  mentions_premium: 1
+  mentions_date: 1
+  mentions_limit: 2
+  mentions_deductible: 1
+  mentions_description: 1
+  mentions_total: 1
+  mentions_coverage: 1
+  mentions_amount: 1
+  mentions_compensation: 1
+
+📁 Results saved to: 2025-09-08T00:18:10.807670
+💾 Results saved to: table_qa_evaluation_20250908_001810.json
+(venv) PS C:\UserFiles\User\Desktop\FINAL_PROJECT\insurance-rag-agent> 

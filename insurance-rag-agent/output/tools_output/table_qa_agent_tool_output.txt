@@ -1,0 +1,67 @@
+...
+
+==================================================
+
+Ask a question: How much was Petr Petrov final settlement payment?
+
+Processing:
+[ROUTING] Decision:
+   Thought: The question specifically asks for the final settlement payment amount for Petr Petrov, which is a precise financial detail. This aligns with the criteria for using the TABLE_QA tool, as it involves querying structured data related to settlement amounts.
+   Selected Tool: table_qa
+From table_qa_agent_tool.
+
+Answer:
+The final settlement payment for Petr Petrov was $212,500.
+
+Tables:
+[
+    {
+        'TableId': 'Table-Petr_Petrov_Payment_Report-2-1',
+        'csv': 'storage\\tables\\Table-Petr_Petrov_Payment_Report-2-1.csv',
+        'file_name': 'Petr_Petrov_Payment_Report.pdf'
+    }
+]
+
+Anchors:
+[
+    {
+        'FileName': 'Petr_Petrov_Payment_Report.pdf',
+        'PageNumber': 2,
+        'SectionType': 'Table',
+        'TableId': 'Table-Petr_Petrov_Payment_Report-2-1',
+        'FigureId': None,
+        'Score': 10.0
+    }
+]
+PS C:\UserFiles\User\Desktop\FINAL_PROJECT\insurance-rag-agent> python -m src.main ask "What is Alex Jones total policy premium?" --storage storage
+resource module not available on Windows
+From table_qa_agent_tool.
+
+Answer:
+Alex Jones' total policy premium is $7,150.00.
+
+Tables:
+[
+    {
+        'TableId': 'Table-Alex_Jones_Insurance_Policy-2-1',
+        'csv': 'storage\\tables\\Table-Alex_Jones_Insurance_Policy-2-1.csv',
+        'file_name': 'Alex_Jones_Insurance_Policy.pdf'
+    }
+]
+
+Anchors:
+[
+    {
+        'FileName': 'Alex_Jones_Insurance_Policy.pdf',
+        'PageNumber': 2,
+        'SectionType': 'Table',
+        'TableId': 'Table-Alex_Jones_Insurance_Policy-2-1',
+        'FigureId': None,
+        'Score': 10.0
+    }
+]
+
+==================================================
+
+Ask a question:
+...

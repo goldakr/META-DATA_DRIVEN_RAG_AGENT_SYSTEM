@@ -1,0 +1,445 @@
+================================================================================
+INSURANCE RAG AGENT - TABLE EXTRACTION
+================================================================================
+Generated on: 2025-09-07 20:00:22
+Data directory: data
+Total PDF files: 9
+================================================================================
+
+
+============================================================
+PDF FILE 1: Alex_Jones_Accident_Case.pdf
+============================================================
+Full path: data\Alex_Jones_Accident_Case.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Alex_Jones_Accident_Case-7-1
+  page: 7
+  csv: temp_tables\Table-Alex_Jones_Accident_Case-7-1.csv
+  file_name: Alex_Jones_Accident_Case.pdf
+  method: pdfplumber
+  summary: Table with shape 5x2. Preview (CSV):
+Description,Amount
+Medical Bills (Past & Future),"$80,000"
+Lost Wages (Past & Future),"$55,000"
+Pain and Suffering,"$95,000"
+Home Modifications,"$20,000"
+Total settlement amount,"$250,000"
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 5x2. Preview (CSV):
+Description,Amount
+Medical Bills (Past & Future),"$80,000"
+Lost Wages (Past & Future),"$55,000"
+Pain and Suffering,"$95,000"
+Home Modifications,"$20,000"
+Total settlement amount,"$250,000"
+
+
+TABLE CONTENT (CSV):
+Shape: 5 rows x 2 columns
+Columns: ['Description', 'Amount']
+
+COMPLETE TABLE CONTENT:
+                  Description   Amount
+Medical Bills (Past & Future)  $80,000
+   Lost Wages (Past & Future)  $55,000
+           Pain and Suffering  $95,000
+           Home Modifications  $20,000
+      Total settlement amount $250,000
+
+============================================================
+
+
+============================================================
+PDF FILE 2: Alex_Jones_Insurance_Policy.pdf
+============================================================
+Full path: data\Alex_Jones_Insurance_Policy.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Alex_Jones_Insurance_Policy-2-1
+  page: 2
+  csv: temp_tables\Table-Alex_Jones_Insurance_Policy-2-1.csv
+  file_name: Alex_Jones_Insurance_Policy.pdf
+  method: pdfplumber
+  summary: Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,"$3,500.00"
+Bodily Injury,"$1,000,000","$2,000,000",N/A,"$2,500.00"
+Property Damage,N/A,"$500,000",N/A,"$1,000.00"
+Part B: Medical Payments,"$10,000",N/A,N/A,$150.00
+Part C: Uninsured Motorist,,,,$450.00
+Bodily Injury,"$1,000,000","$2,000,000",N/A,$350.00
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,"$3,500.00"
+Bodily Injury,"$1,000,000","$2,000,000",N/A,"$2,500.00"
+Property Damage,N/A,"$500,000",N/A,"$1,000.00"
+Part B: Medical Payments,"$10,000",N/A,N/A,$150.00
+Part C: Uninsured Motorist,,,,$450.00
+Bodily Injury,"$1,000,000","$2,000,000",N/A,$350.00
+
+
+TABLE CONTENT (CSV):
+Shape: 14 rows x 5 columns
+Columns: ['Coverage Type', 'Per-Person Limit', 'Per-Accident Limit', 'Deductible', 'Premium']
+
+COMPLETE TABLE CONTENT:
+             Coverage Type  Per-Person Limit Per-Accident Limit Deductible   Premium
+         Part A: Liability               NaN                NaN        NaN $3,500.00
+             Bodily Injury        $1,000,000         $2,000,000        NaN $2,500.00
+           Property Damage               NaN           $500,000        NaN $1,000.00
+  Part B: Medical Payments           $10,000                NaN        NaN   $150.00
+Part C: Uninsured Motorist               NaN                NaN        NaN   $450.00
+             Bodily Injury        $1,000,000         $2,000,000        NaN   $350.00
+           Property Damage               NaN           $500,000     $1,000   $100.00
+   Part D: Physical Damage               NaN                NaN        NaN $2,800.00
+                 Collision Actual Cash Value  Actual Cash Value     $2,500 $1,800.00
+             Comprehensive Actual Cash Value  Actual Cash Value     $1,500 $1,000.00
+              Endorsements               NaN                NaN        NaN   $250.00
+            On-Hook Towing           $15,000                NaN        NaN   $100.00
+         Motor Truck Cargo           $50,000                NaN       $500   $150.00
+      Total Policy Premium               NaN                NaN        NaN $7,150.00
+
+============================================================
+
+
+============================================================
+PDF FILE 3: Alex_Jones_Payment_Report.pdf
+============================================================
+Full path: data\Alex_Jones_Payment_Report.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Alex_Jones_Payment_Report-2-1
+  page: 2
+  csv: temp_tables\Table-Alex_Jones_Payment_Report-2-1.csv
+  file_name: Alex_Jones_Payment_Report.pdf
+  method: pdfplumber
+  summary: Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"April 10, 2025",Truck Damage Assessment,"$12,000"
+"May 1, 2025",Physical Damage Payout (Collision),"$9,500"
+"July 1, 2025",Initial Liability Reserve,"$120,000"
+"July 15, 2025",Final Settlement Payment (Petr Petrov),"$212,500"
+"August 1, 2025",Legal & Investigation Fees,"$25,000"
+"August 5, 2025",On-Hook Towing Reimbursement,$850
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"April 10, 2025",Truck Damage Assessment,"$12,000"
+"May 1, 2025",Physical Damage Payout (Collision),"$9,500"
+"July 1, 2025",Initial Liability Reserve,"$120,000"
+"July 15, 2025",Final Settlement Payment (Petr Petrov),"$212,500"
+"August 1, 2025",Legal & Investigation Fees,"$25,000"
+"August 5, 2025",On-Hook Towing Reimbursement,$850
+
+
+TABLE CONTENT (CSV):
+Shape: 6 rows x 3 columns
+Columns: ['Date', 'Description', 'Amount']
+
+COMPLETE TABLE CONTENT:
+          Date                            Description   Amount
+April 10, 2025                Truck Damage Assessment  $12,000
+   May 1, 2025     Physical Damage Payout (Collision)   $9,500
+  July 1, 2025              Initial Liability Reserve $120,000
+ July 15, 2025 Final Settlement Payment (Petr Petrov) $212,500
+August 1, 2025             Legal & Investigation Fees  $25,000
+August 5, 2025           On-Hook Towing Reimbursement     $850
+
+============================================================
+
+
+============================================================
+PDF FILE 4: Maria_Petrov_Accident_Case.pdf
+============================================================
+Full path: data\Maria_Petrov_Accident_Case.pdf
+
+📊 TABLES FOUND (0):
+----------------------------------------
+
+
+============================================================
+PDF FILE 5: Maria_Petrov_Payment_Report.pdf
+============================================================
+Full path: data\Maria_Petrov_Payment_Report.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Maria_Petrov_Payment_Report-1-1
+  page: 1
+  csv: temp_tables\Table-Maria_Petrov_Payment_Report-1-1.csv
+  file_name: Maria_Petrov_Payment_Report.pdf
+  method: pdfplumber
+  summary: Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"May 30, 2025",Initial Claim Filing,$0
+"June 15, 2025",Partial Compensation Approved,"$50,000"
+"July 10, 2025",Settlement Payment,"$150,000"
+"July 15, 2025",Medical Payments (Physical Therapy),"$5,000"
+"July 20, 2025",Vehicle Total Loss Payout,"$30,000"
+"August 1, 2025",Home Modifications Reimbursement,"$10,000"
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"May 30, 2025",Initial Claim Filing,$0
+"June 15, 2025",Partial Compensation Approved,"$50,000"
+"July 10, 2025",Settlement Payment,"$150,000"
+"July 15, 2025",Medical Payments (Physical Therapy),"$5,000"
+"July 20, 2025",Vehicle Total Loss Payout,"$30,000"
+"August 1, 2025",Home Modifications Reimbursement,"$10,000"
+
+
+TABLE CONTENT (CSV):
+Shape: 6 rows x 3 columns
+Columns: ['Date', 'Description', 'Amount']
+
+COMPLETE TABLE CONTENT:
+          Date                         Description   Amount
+  May 30, 2025                Initial Claim Filing       $0
+ June 15, 2025       Partial Compensation Approved  $50,000
+ July 10, 2025                  Settlement Payment $150,000
+ July 15, 2025 Medical Payments (Physical Therapy)   $5,000
+ July 20, 2025           Vehicle Total Loss Payout  $30,000
+August 1, 2025    Home Modifications Reimbursement  $10,000
+
+============================================================
+
+
+============================================================
+PDF FILE 6: Petr_Petrov_Accident_Case.pdf
+============================================================
+Full path: data\Petr_Petrov_Accident_Case.pdf
+
+📊 TABLES FOUND (0):
+----------------------------------------
+
+
+============================================================
+PDF FILE 7: Petr_Petrov_Insurance Policy_Toyota.pdf
+============================================================
+Full path: data\Petr_Petrov_Insurance Policy_Toyota.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Petr_Petrov_Insurance Policy_Toyota-2-1
+  page: 2
+  csv: temp_tables\Table-Petr_Petrov_Insurance Policy_Toyota-2-1.csv
+  file_name: Petr_Petrov_Insurance Policy_Toyota.pdf
+  method: pdfplumber
+  summary: Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,$800.00
+Bodily Injury,"$250,000","$500,000",N/A,$550.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$50.00
+Part C: Uninsured Motorist,,,,$120.00
+Bodily Injury,"$250,000","$500,000",N/A,$90.00
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,$800.00
+Bodily Injury,"$250,000","$500,000",N/A,$550.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$50.00
+Part C: Uninsured Motorist,,,,$120.00
+Bodily Injury,"$250,000","$500,000",N/A,$90.00
+
+
+TABLE CONTENT (CSV):
+Shape: 14 rows x 5 columns
+Columns: ['Coverage Type', 'Per-Person Limit', 'Per-Accident Limit', 'Deductible', 'Premium']
+
+COMPLETE TABLE CONTENT:
+             Coverage Type  Per-Person Limit Per-Accident Limit Deductible   Premium
+         Part A: Liability               NaN                NaN        NaN   $800.00
+             Bodily Injury          $250,000           $500,000        NaN   $550.00
+           Property Damage               NaN           $100,000        NaN   $250.00
+  Part B: Medical Payments            $5,000                NaN        NaN    $50.00
+Part C: Uninsured Motorist               NaN                NaN        NaN   $120.00
+             Bodily Injury          $250,000           $500,000        NaN    $90.00
+           Property Damage               NaN           $100,000       $250    $30.00
+   Part D: Physical Damage               NaN                NaN        NaN   $700.00
+                 Collision Actual Cash Value  Actual Cash Value       $500   $450.00
+             Comprehensive Actual Cash Value  Actual Cash Value       $250   $250.00
+              Endorsements               NaN                NaN        NaN    $30.00
+       Roadside Assistance          Included           Included        NaN    $15.00
+      Rental Reimbursement           $30/day           $900 max        NaN    $15.00
+      Total Policy Premium               NaN                NaN        NaN $1,700.00
+
+============================================================
+
+
+============================================================
+PDF FILE 8: Petr_Petrov_Insurance_Policy_Honda.pdf
+============================================================
+Full path: data\Petr_Petrov_Insurance_Policy_Honda.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Petr_Petrov_Insurance_Policy_Honda-2-1
+  page: 2
+  csv: temp_tables\Table-Petr_Petrov_Insurance_Policy_Honda-2-1.csv
+  file_name: Petr_Petrov_Insurance_Policy_Honda.pdf
+  method: pdfplumber
+  summary: Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,"Per-Accident
+Limit","Deduct
+ible",Premium
+Part A: Liability,,,,$750.00
+Bodily Injury,"$250,000","$500,000",N/A,$500.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$45.00
+Part C: Uninsured Motorist,,,,$110.00
+Bodily Injury,"$250,000","$500,000",N/A,$80.00
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,"Per-Accident
+Limit","Deduct
+ible",Premium
+Part A: Liability,,,,$750.00
+Bodily Injury,"$250,000","$500,000",N/A,$500.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$45.00
+Part C: Uninsured Motorist,,,,$110.00
+Bodily Injury,"$250,000","$500,000",N/A,$80.00
+
+
+TABLE CONTENT (CSV):
+Shape: 14 rows x 5 columns
+Columns: ['Coverage Type', 'Per-Person Limit', 'Per-Accident\nLimit', 'Deduct\nible', 'Premium']
+
+COMPLETE TABLE CONTENT:
+             Coverage Type  Per-Person Limit Per-Accident\nLimit Deduct\nible   Premium
+         Part A: Liability               NaN                 NaN          NaN   $750.00
+             Bodily Injury          $250,000            $500,000          NaN   $500.00
+           Property Damage               NaN            $100,000          NaN   $250.00
+  Part B: Medical Payments            $5,000                 NaN          NaN    $45.00
+Part C: Uninsured Motorist               NaN                 NaN          NaN   $110.00
+             Bodily Injury          $250,000            $500,000          NaN    $80.00
+           Property Damage               NaN            $100,000         $250    $30.00
+   Part D: Physical Damage               NaN                 NaN          NaN   $650.00
+                 Collision Actual Cash Value   Actual Cash Value         $500   $400.00
+             Comprehensive Actual Cash Value   Actual Cash Value         $250   $250.00
+              Endorsements               NaN                 NaN          NaN    $30.00
+       Roadside Assistance          Included            Included          NaN    $15.00
+      Rental Reimbursement           $30/day            $900 max          NaN    $15.00
+      Total Policy Premium               NaN                 NaN          NaN $1,585.00
+
+============================================================
+
+
+============================================================
+PDF FILE 9: Petr_Petrov_Payment_Report.pdf
+============================================================
+Full path: data\Petr_Petrov_Payment_Report.pdf
+
+📊 TABLES FOUND (1):
+----------------------------------------
+
+TABLE 1:
+--------------------
+TABLE METADATA:
+  table_id: Table-Petr_Petrov_Payment_Report-2-1
+  page: 2
+  csv: temp_tables\Table-Petr_Petrov_Payment_Report-2-1.csv
+  file_name: Petr_Petrov_Payment_Report.pdf
+  method: pdfplumber
+  summary: Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"May 30, 2025",Initial Claim Filing,$0
+"June 15, 2025",Partial Compensation from At-Fault Insurer,"$50,000"
+"July 10, 2025",Final Settlement Payment from At-Fault Insurer,"$212,500"
+"July 20, 2025",Total Loss Payout for Honda Civic,"$30,000"
+"July 25, 2025",Medical Payments (Physical Therapy Reimbursement),"$5,000"
+"August 1, 2025",Home Modifications Reimbursement,"$10,000"
+
+
+EXTRACTION METHOD: pdfplumber
+
+TABLE SUMMARY:
+Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"May 30, 2025",Initial Claim Filing,$0
+"June 15, 2025",Partial Compensation from At-Fault Insurer,"$50,000"
+"July 10, 2025",Final Settlement Payment from At-Fault Insurer,"$212,500"
+"July 20, 2025",Total Loss Payout for Honda Civic,"$30,000"
+"July 25, 2025",Medical Payments (Physical Therapy Reimbursement),"$5,000"
+"August 1, 2025",Home Modifications Reimbursement,"$10,000"
+
+
+TABLE CONTENT (CSV):
+Shape: 6 rows x 3 columns
+Columns: ['Date', 'Description', 'Amount']
+
+COMPLETE TABLE CONTENT:
+          Date                                       Description   Amount
+  May 30, 2025                              Initial Claim Filing       $0
+ June 15, 2025        Partial Compensation from At-Fault Insurer  $50,000
+ July 10, 2025    Final Settlement Payment from At-Fault Insurer $212,500
+ July 20, 2025                 Total Loss Payout for Honda Civic  $30,000
+ July 25, 2025 Medical Payments (Physical Therapy Reimbursement)   $5,000
+August 1, 2025                  Home Modifications Reimbursement  $10,000
+
+============================================================
+
+
+================================================================================
+SUMMARY
+================================================================================
+Total PDF files processed: 9
+Total tables extracted: 7
+Average tables per PDF: 0.8
+Generation completed: 2025-09-07 20:00:32
+================================================================================

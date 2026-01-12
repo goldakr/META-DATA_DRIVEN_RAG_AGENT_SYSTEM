@@ -1,0 +1,245 @@
+PS C:\UserFiles\User\Desktop\FINAL_PROJECT> cd "C:\UserFiles\User\Desktop\FINAL_PROJECT\insurance-rag-agent"; python print_chunks_and_tables.py
+🔍 Processing PDFs from: data
+📝 Output file: output\extracted_chunks_20250907_200015.txt
+📄 Found 9 PDF files
+📖 Processing 1/9: Alex_Jones_Accident_Report.pdf
+  ✅ Extracted 12 text chunks
+📖 Processing 2/9: Alex_Jones_Insurance_Policy.pdf
+  ✅ Extracted 14 text chunks
+📖 Processing 3/9: Alex_Jones_Payment_Report.pdf
+  ✅ Extracted 3 text chunks
+📖 Processing 4/9: Maria_Petrov_Accident_Case.pdf
+  ✅ Extracted 8 text chunks
+📖 Processing 5/9: Maria_Petrov_Payment_Report.pdf
+  ✅ Extracted 1 text chunks
+📖 Processing 6/9: Petr_Petrov_Accident_Case.pdf
+  ✅ Extracted 10 text chunks
+📖 Processing 7/9: Petr_Petrov_Insurance Policy_Toyota.pdf
+  ✅ Extracted 13 text chunks
+📖 Processing 8/9: Petr_Petrov_Insurance_Policy_Honda.pdf
+  ✅ Extracted 15 text chunks
+📖 Processing 9/9: Petr_Petrov_Payment_Report.pdf
+  ✅ Extracted 3 text chunks
+
+✅ Successfully wrote 79 chunks to output\extracted_chunks_20250907_200015.txt
+📊 Average chunks per PDF: 8.8
+🔍 Processing PDFs for tables from: data
+📝 Output file: output\extracted_tables_20250907_200015.txt
+📄 Found 9 PDF files
+📊 Processing tables 1/9: Alex_Jones_Accident_Report.pdf
+
+📊 TABLE 1 from Alex_Jones_Accident_Report.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 5 rows x 2 columns
+   Summary: Table with shape 5x2. Preview (CSV):
+Description,Amount
+Medical Bills (Past & Future),"$80,000"
+Lost Wages (Past & Future),"$55,000"
+Pain and Suffering,"$95,000"
+Home Modifications,"$20,000"
+Total settlement amount,"$250,000"
+
+   Content:
+   ==================================================
+                     Description   Amount
+   Medical Bills (Past & Future)  $80,000
+      Lost Wages (Past & Future)  $55,000
+              Pain and Suffering  $95,000
+              Home Modifications  $20,000
+         Total settlement amount $250,000
+   ==================================================
+  ✅ Extracted 1 tables
+📊 Processing tables 2/9: Alex_Jones_Insurance_Policy.pdf
+
+📊 TABLE 1 from Alex_Jones_Insurance_Policy.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 14 rows x 5 columns
+   Summary: Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,"$3,500.00"
+Bodily Injury,"$1,000,000","$2,000,000",N/A,"$2,500.00"
+Property Damage,N/A,"$500,000",N/A,"$1,000.00"
+Part B: Medical Payments,"$10,000",N/A,N/A,$150.00
+Part C: Uninsured Motorist,,,,$450.00
+Bodily Injury,"$1,000,000","$2,000,000",N/A,$350.00
+
+   Content:
+   ==================================================
+                Coverage Type  Per-Person Limit Per-Accident Limit Deductible   Premium
+            Part A: Liability               NaN                NaN        NaN $3,500.00
+                Bodily Injury        $1,000,000         $2,000,000        NaN $2,500.00
+              Property Damage               NaN           $500,000        NaN $1,000.00
+     Part B: Medical Payments           $10,000                NaN        NaN   $150.00
+   Part C: Uninsured Motorist               NaN                NaN        NaN   $450.00
+                Bodily Injury        $1,000,000         $2,000,000        NaN   $350.00
+              Property Damage               NaN           $500,000     $1,000   $100.00
+      Part D: Physical Damage               NaN                NaN        NaN $2,800.00
+                    Collision Actual Cash Value  Actual Cash Value     $2,500 $1,800.00
+                Comprehensive Actual Cash Value  Actual Cash Value     $1,500 $1,000.00
+                 Endorsements               NaN                NaN        NaN   $250.00
+               On-Hook Towing           $15,000                NaN        NaN   $100.00
+            Motor Truck Cargo           $50,000                NaN       $500   $150.00
+         Total Policy Premium               NaN                NaN        NaN $7,150.00
+   ==================================================
+  ✅ Extracted 1 tables
+📊 Processing tables 3/9: Alex_Jones_Payment_Report.pdf
+
+📊 TABLE 1 from Alex_Jones_Payment_Report.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 6 rows x 3 columns
+   Summary: Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"April 10, 2025",Truck Damage Assessment,"$12,000"
+"May 1, 2025",Physical Damage Payout (Collision),"$9,500"
+"July 1, 2025",Initial Liability Reserve,"$120,000"
+"July 15, 2025",Final Settlement Payment (Petr Petrov),"$212,500"
+"August 1, 2025",Legal & Investigation Fees,"$25,000"
+"August 5, 2025",On-Hook Towing Reimbursement,$850
+
+   Content:
+   ==================================================
+             Date                            Description   Amount
+   April 10, 2025                Truck Damage Assessment  $12,000
+      May 1, 2025     Physical Damage Payout (Collision)   $9,500
+     July 1, 2025              Initial Liability Reserve $120,000
+    July 15, 2025 Final Settlement Payment (Petr Petrov) $212,500
+   August 1, 2025             Legal & Investigation Fees  $25,000
+   August 5, 2025           On-Hook Towing Reimbursement     $850
+   ==================================================
+  ✅ Extracted 1 tables
+📊 Processing tables 4/9: Maria_Petrov_Accident_Case.pdf
+  ✅ Extracted 0 tables
+📊 Processing tables 5/9: Maria_Petrov_Payment_Report.pdf
+
+📊 TABLE 1 from Maria_Petrov_Payment_Report.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 6 rows x 3 columns
+   Summary: Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"May 30, 2025",Initial Claim Filing,$0
+"June 15, 2025",Partial Compensation Approved,"$50,000"
+"July 10, 2025",Settlement Payment,"$150,000"
+"July 15, 2025",Medical Payments (Physical Therapy),"$5,000"
+"July 20, 2025",Vehicle Total Loss Payout,"$30,000"
+"August 1, 2025",Home Modifications Reimbursement,"$10,000"
+
+   Content:
+   ==================================================
+             Date                         Description   Amount
+     May 30, 2025                Initial Claim Filing       $0
+    June 15, 2025       Partial Compensation Approved  $50,000
+    July 10, 2025                  Settlement Payment $150,000
+    July 15, 2025 Medical Payments (Physical Therapy)   $5,000
+    July 20, 2025           Vehicle Total Loss Payout  $30,000
+   August 1, 2025    Home Modifications Reimbursement  $10,000
+   ==================================================
+  ✅ Extracted 1 tables
+📊 Processing tables 6/9: Petr_Petrov_Accident_Case.pdf
+  ✅ Extracted 0 tables
+📊 Processing tables 7/9: Petr_Petrov_Insurance Policy_Toyota.pdf
+
+📊 TABLE 1 from Petr_Petrov_Insurance Policy_Toyota.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 14 rows x 5 columns
+   Summary: Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,Per-Accident Limit,Deductible,Premium
+Part A: Liability,,,,$800.00
+Bodily Injury,"$250,000","$500,000",N/A,$550.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$50.00
+Part C: Uninsured Motorist,,,,$120.00
+Bodily Injury,"$250,000","$500,000",N/A,$90.00
+
+   Content:
+   ==================================================
+                Coverage Type  Per-Person Limit Per-Accident Limit Deductible   Premium
+            Part A: Liability               NaN                NaN        NaN   $800.00
+                Bodily Injury          $250,000           $500,000        NaN   $550.00
+              Property Damage               NaN           $100,000        NaN   $250.00
+     Part B: Medical Payments            $5,000                NaN        NaN    $50.00
+   Part C: Uninsured Motorist               NaN                NaN        NaN   $120.00
+                Bodily Injury          $250,000           $500,000        NaN    $90.00
+              Property Damage               NaN           $100,000       $250    $30.00
+      Part D: Physical Damage               NaN                NaN        NaN   $700.00
+                    Collision Actual Cash Value  Actual Cash Value       $500   $450.00
+                Comprehensive Actual Cash Value  Actual Cash Value       $250   $250.00
+                 Endorsements               NaN                NaN        NaN    $30.00
+          Roadside Assistance          Included           Included        NaN    $15.00
+         Rental Reimbursement           $30/day           $900 max        NaN    $15.00
+         Total Policy Premium               NaN                NaN        NaN $1,700.00
+   ==================================================
+  ✅ Extracted 1 tables
+📊 Processing tables 8/9: Petr_Petrov_Insurance_Policy_Honda.pdf
+
+📊 TABLE 1 from Petr_Petrov_Insurance_Policy_Honda.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 14 rows x 5 columns
+   Summary: Table with shape 14x5. Preview (CSV):
+Coverage Type,Per-Person Limit,"Per-Accident
+Limit","Deduct
+ible",Premium
+Part A: Liability,,,,$750.00
+Bodily Injury,"$250,000","$500,000",N/A,$500.00
+Property Damage,N/A,"$100,000",N/A,$250.00
+Part B: Medical Payments,"$5,000",N/A,N/A,$45.00
+Part C: Uninsured Motorist,,,,$110.00
+Bodily Injury,"$250,000","$500,000",N/A,$80.00
+
+   Content:
+   ==================================================
+                Coverage Type  Per-Person Limit Per-Accident\nLimit Deduct\nible   Premium
+            Part A: Liability               NaN                 NaN          NaN   $750.00
+                Bodily Injury          $250,000            $500,000          NaN   $500.00
+              Property Damage               NaN            $100,000          NaN   $250.00
+     Part B: Medical Payments            $5,000                 NaN          NaN    $45.00
+   Part C: Uninsured Motorist               NaN                 NaN          NaN   $110.00
+                Bodily Injury          $250,000            $500,000          NaN    $80.00
+              Property Damage               NaN            $100,000         $250    $30.00
+      Part D: Physical Damage               NaN                 NaN          NaN   $650.00
+                    Collision Actual Cash Value   Actual Cash Value         $500   $400.00
+                Comprehensive Actual Cash Value   Actual Cash Value         $250   $250.00
+                 Endorsements               NaN                 NaN          NaN    $30.00
+          Roadside Assistance          Included            Included          NaN    $15.00
+         Rental Reimbursement           $30/day            $900 max          NaN    $15.00
+         Total Policy Premium               NaN                 NaN          NaN $1,585.00
+   ==================================================
+  ✅ Extracted 1 tables
+📊 Processing tables 9/9: Petr_Petrov_Payment_Report.pdf
+
+📊 TABLE 1 from Petr_Petrov_Payment_Report.pdf:
+   Method: pdfplumber
+   Accuracy: N/A
+   Shape: 6 rows x 3 columns
+   Summary: Table with shape 6x3. Preview (CSV):
+Date,Description,Amount
+"May 30, 2025",Initial Claim Filing,$0
+"June 15, 2025",Partial Compensation from At-Fault Insurer,"$50,000"
+"July 10, 2025",Final Settlement Payment from At-Fault Insurer,"$212,500"
+"July 20, 2025",Total Loss Payout for Honda Civic,"$30,000"
+"July 25, 2025",Medical Payments (Physical Therapy Reimbursement),"$5,000"
+"August 1, 2025",Home Modifications Reimbursement,"$10,000"
+
+   Content:
+   ==================================================
+             Date                                       Description   Amount
+     May 30, 2025                              Initial Claim Filing       $0
+    June 15, 2025        Partial Compensation from At-Fault Insurer  $50,000
+    July 10, 2025    Final Settlement Payment from At-Fault Insurer $212,500
+    July 20, 2025                 Total Loss Payout for Honda Civic  $30,000
+    July 25, 2025 Medical Payments (Physical Therapy Reimbursement)   $5,000
+   August 1, 2025                  Home Modifications Reimbursement  $10,000
+   ==================================================
+  ✅ Extracted 1 tables
+
+✅ Successfully wrote 7 tables to output\extracted_tables_20250907_200015.txt
+
+🎉 All done!
+📝 Text chunks saved to: output\extracted_chunks_20250907_200015.txt
+📊 Tables saved to: output\extracted_tables_20250907_200015.txt
+PS C:\UserFiles\User\Desktop\FINAL_PROJECT\insurance-rag-agent>
