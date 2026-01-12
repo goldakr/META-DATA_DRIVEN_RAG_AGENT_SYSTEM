@@ -6,7 +6,7 @@ This project creates a Retrieval-Augmented Generation (RAG) agent tailored for *
 - **Reranking**: FlashRank (cross‑encoder) by default, with **LLM-based rerank** fallback
 - **Table extraction** from PDFs via **`PDFTableReader`** (Camelot)
 - **Rich metadata & anchors** on every chunk (e.g., `PageNumber`, `SectionType`, `TableId/FigureId`, `IncidentDate/Type`, `ClientId/CaseId`)
-- **Agent tools**: Router → (Summary / Needle / Table‑QA / Policy‑Check)
+- **Agent tools**: Router → (Summary / Needle / Table‑QA / Statistics)
 - **Chunk budget**: ~5% of document OR max 10 chunks passed to the LLM
 
 > Place your source PDFs under: `./data/` (you may create subfolders per category/case).
